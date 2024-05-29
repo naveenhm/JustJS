@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Typescript ToDo</title>
+  </head>
+  <body>
+    <h1>My toDo-List</h1>
+    <ul class="taskList"></ul>
+    <form class="taskForm">
+      <label for="task">Task:</label>
+      <input type="text" id="task" name="task" class="newTaskInput" />
+      <label for="description">Description:</label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        class="newDescriptionInput"
+      />
+      <button type="submit" class="submitButton">Add</button>
+    </form>
+	<br>
+	
+	<div id="table-container"></div>
+
+
+	<div id="editModal" class="modal">
+	  <div class="modal-content">
+		<span class="close-modal">&times;</span>
+		<form id="editForm">
+		  </form>
+	  </div>
+	</div>
+
+    <ul id="user-data"></ul>
+
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
